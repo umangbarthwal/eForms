@@ -10,15 +10,21 @@ namespace Eform1.models
     public class table_1
     {
         [Key]
+        [Required]
         public int UID_F { get; set; }
+
         public string Form_Name { get; set; }
 
         public string Creator { get; set; }
+
         public string Created_On { get; set; }
 
 
+        #region Navigation Properties
+        public ICollection<table_2> table_2 { get; set; }
+        #endregion
 
-      //  public ICollection<table_2>  table_2{ get; set; }
-    // public virtual table_2 Table_2 { get; set; } [ForeignKey("table_2")]
-}
+        //  public ICollection<table_2>  table_2{ get; set; }
+        // public virtual table_2 Table_2 { get; set; } [ForeignKey("table_2")]
+    }
 }

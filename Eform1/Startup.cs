@@ -12,6 +12,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using MySql.Data.EntityFrameworkCore;
+using Eform1.Data;
+
 namespace Eform1
 {
     public class Startup
