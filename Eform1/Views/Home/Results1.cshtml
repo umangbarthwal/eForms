@@ -1,0 +1,29 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+email = 
+<br />
+<p>
+    Html.TextArea("Textoutput", Model.formData.TextAns)
+</p>
+Selected Value:@Model.formData.Num
+<br />
+Your gender is :@Model.formData.Gender
+@if (Model.formData.Agree)
+{
+    <p>Thanks for accepting the terms and conditions</p>
+}
+else
+{
+    <p>sorry you cant proceed further</p>
+}
+
+@foreach (var item in Model)
+{
+
+    <span>@item.</span>
+    <span>@item.UID_Q</span>
+    <span>@item.ID_MCQ</span>
+    <span>@item.Options</span>
+}
+
+

@@ -1,0 +1,20 @@
+﻿
+@model Eform1.ViewModels.FormModelView
+Created on:@Model.Table_1.Created_On
+
+Creator:@Model.Table_1.Creator
+
+@foreach (var Table_2 in Model.list_2)
+{
+       <span>@Table_2.UID_Q</span> 
+       <span>@Table_2.Question</span> 
+       <span>@Table_2.Question_Type</span>
+
+
+
+}
+@foreach (var Table_3 in Model.list_3)
+{
+    <span>@Table_3.ID_MCQ</span>
+    <span>@Table_3.Options</span>
+}

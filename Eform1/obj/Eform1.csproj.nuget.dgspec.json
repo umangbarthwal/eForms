@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/umangbarthwal/Downloads/Eform1/Eform1.csproj": {}
+  },
+  "projects": {
+    "/Users/umangbarthwal/Downloads/Eform1/Eform1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/umangbarthwal/Downloads/Eform1/Eform1.csproj",
+        "projectName": "Eform1",
+        "projectPath": "/Users/umangbarthwal/Downloads/Eform1/Eform1.csproj",
+        "packagesPath": "/Users/umangbarthwal/.nuget/packages/",
+        "outputPath": "/Users/umangbarthwal/Downloads/Eform1/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/umangbarthwal/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.20, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.20, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
