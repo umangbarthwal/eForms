@@ -34,13 +34,91 @@ namespace Eform1.controllers
             return View();
         }
 
+
+
         [HttpGet]
-        public ViewResult CreateForm(string? val)
+        public ViewResult CreateForm()
         {
             return View();
         }
 
+
         [HttpPost]
+        public IActionResult CreateForm([Bind("UID_F,Form_Name,Creator,Created_On")] table_1 Table_1,
+                                        [Bind("UID_F1,UID_Q,Question_Type,Question")] table_2 Table_2,
+                                        [Bind("F2,UID_Q,ID_MCQ,Options")] table_3 Table_3)
+        {
+            /*Random id_f = new Random();
+            Table_1.UID_F = id_f.Next();
+            */
+            Table_1.Form_Name = Request.Form["form-name"];
+            Table_1.Creator = Request.Form["creators-name"];
+            Table_1.Created_On = DateTime.Now.ToString("h:mm:ss ");
+            _formRepository.Add_1(Table_1);
+
+
+            int i = 0;
+            while (true)
+            {
+
+                if (!string.IsNullOrEmpty(Request.Form[$"ques-{i}"]))
+                {
+                    Table_2 = new table_2();
+                    Table_2.UID_F1 = Table_1.UID_F;
+                    Table_2.Question_Type = Request.Form[$"sel-{i}"];
+                    Table_2.Question = Request.Form[$"ques-{i}"];
+                    _formRepository.Add_2(Table_2);
+
+
+                    if (Table_2.Question_Type == "radio" || Table_2.Question_Type == "checkbox")
+                    {
+
+                        int j = 1;
+                        while (true)
+                        {
+
+                            if (!string.IsNullOrEmpty(Request.Form[$"radio-{i}-{j}"]))
+                            {
+                                Table_3 = new table_3();
+                                Table_3.F2 = Table_1.UID_F;
+                                Table_3.UID_Q = Table_2.UID_Q;
+                                Table_3.Options = Request.Form[$"radio-{i}-{j}"];
+                                _formRepository.Add_3(Table_3);
+
+
+                                j++;
+                            }
+
+                            else
+                            {
+                                break;
+                            }
+
+                        }
+
+
+                    }
+                      
+
+                    i++;
+                }
+
+                else
+                {
+                    break;
+                }
+
+
+
+                
+            }
+
+            return RedirectToAction("Results", new { id = Table_1.UID_F });
+
+        }
+
+
+        /*[HttpPost]
         public IActionResult CreateForm( )
         {
             Random va = new Random();
@@ -96,7 +174,7 @@ namespace Eform1.controllers
             }
             return RedirectToAction("Results", new { id = Table_1.UID_F });  // return View();
         }
-       
+       */
         public ActionResult Results(int id)
         {
            // tmp = 656501304;
@@ -106,7 +184,7 @@ namespace Eform1.controllers
             formModelView.list_3 = _formRepository.GetAll3(id);  
             return View(formModelView);
         }
-        }
+    }
 
 
 

@@ -1,16 +1,14 @@
 ﻿<Properties StartupConfiguration="{D73BDF18-3D4A-4090-BC11-251C4302D678}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="models/table_1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="models/table_2.cs">
     <Files>
-      <File FileName="Data/FormDbContext.cs" Line="27" Column="1" />
-      <File FileName="models/table_1.cs" Line="31" Column="1" />
-      <File FileName="models/table_2.cs" />
-      <File FileName="models/table_3.cs" />
-      <File FileName="Startup.cs" />
-      <File FileName="appsettings.json" />
-      <File FileName="models/IFormRepository.cs" />
-      <File FileName="models/Formdumy.cs" />
-      <File FileName="controllers/HomeController.cs" />
-      <File FileName="models/MySQLFormRepository.cs" />
+      <File FileName="models/IFormRepository.cs" Line="1" Column="1" />
+      <File FileName="models/MySQLFormRepository.cs" Line="30" Column="1" />
+      <File FileName="controllers/HomeController.cs" Line="67" Column="52" />
+      <File FileName="Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Views/Home/CreateForm.cshtml" Line="56" Column="6" />
+      <File FileName="Views/Home/Results.cshtml" Line="3" Column="32" />
+      <File FileName="models/table_1.cs" Line="1" Column="1" />
+      <File FileName="models/table_2.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,11 +16,13 @@
           <Node name="Eform1" expanded="True">
             <Node name="Eform1" expanded="True">
               <Node name="controllers" expanded="True" />
-              <Node name="Data" expanded="True" />
               <Node name="models" expanded="True">
-                <Node name="table_1.cs" selected="True" />
+                <Node name="table_2.cs" selected="True" />
               </Node>
-              <Node name="Views" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
