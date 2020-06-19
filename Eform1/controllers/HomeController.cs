@@ -8,19 +8,25 @@ using Eform1.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Eform1.Data;
 
 namespace Eform1.controllers
 {
     public class HomeController : Controller
     {
         public IFormRepository _formRepository;
+        public readonly FormDbContext _db;
 
-        public HomeController(IFormRepository formRepository)
+        public HomeController(IFormRepository formRepository, FormDbContext db)
         {
             _formRepository = formRepository;
-
+            _db = db;
         }
-        public IActionResult Index()
+
+
+
+
+        public async Task<IActionResult> Index()
         {
            // _formRepository.Remove_2(279432155);
 
@@ -31,7 +37,7 @@ namespace Eform1.controllers
             Table_3.Options = "yoyo";
             _formRepository.Update_3(Table_3);
             */
-            return View();
+            return View(await _db.table_1s.OrderBy(s => s.UID_F).ToListAsync());
         }
 
 
@@ -188,6 +194,7 @@ namespace Eform1.controllers
 
 
 
+
     /* Formdumy formdumy = new Formdumy();
          formdumy.FormName = Request.Form["radio-0-1"];
          formdumy.FormName1 = Request.Form["radio-1-2"];
@@ -201,7 +208,6 @@ namespace Eform1.controllers
 
            return Content($"hello {formData.Agree}");
          */
-
 
 
 }

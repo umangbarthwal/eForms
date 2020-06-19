@@ -214,3 +214,5 @@ E:/eform/EForm1/obj/Debug/netcoreapp3.1/Razor/Views/Home/CreateForm1.cshtml.g.cs
 /Users/umangbarthwal/Desktop/eForms/Eform1/obj/Debug/netcoreapp3.1/Eform1.dll
 /Users/umangbarthwal/Desktop/eForms/Eform1/obj/Debug/netcoreapp3.1/Eform1.pdb
 /Users/umangbarthwal/Desktop/eForms/Eform1/obj/Debug/netcoreapp3.1/Eform1.genruntimeconfig.cache
+/Users/umangbarthwal/Desktop/eForms/Eform1/obj/Debug/netcoreapp3.1/Eform1.csprojAssemblyReference.cache
+/Users/umangbarthwal/Desktop/eForms/Eform1/obj/Debug/netcoreapp3.1/Razor/Views/Home/Delete.cshtml.g.cs

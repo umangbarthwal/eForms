@@ -12,8 +12,22 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 1 "/Users/umangbarthwal/Desktop/eForms/Eform1/Views/_ViewImports.cshtml"
+using Eform1;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "/Users/umangbarthwal/Desktop/eForms/Eform1/Views/_ViewImports.cshtml"
+using Eform1.models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"76668d8f0f3747f7a52a2e72a5b46eaab63c11fa", @"/Views/Home/Results1.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1419458f2696be8daeade77ddad380cd0c871fdb", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a7eaa723890e1678bfd33de5e37c04ef7a71a8fa", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Results1 : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

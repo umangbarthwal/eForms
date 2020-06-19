@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{D73BDF18-3D4A-4090-BC11-251C4302D678}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/Delete.cshtml">
     <Files>
+      <File FileName="models/MySQLFormRepository.cs" Line="1" Column="1" />
       <File FileName="models/IFormRepository.cs" Line="1" Column="1" />
-      <File FileName="models/MySQLFormRepository.cs" Line="34" Column="52" />
-      <File FileName="controllers/HomeController.cs" Line="49" Column="71" />
-      <File FileName="Views/Home/Index.cshtml" Line="5" Column="23" />
+      <File FileName="controllers/HomeController.cs" Line="72" Column="1" />
+      <File FileName="Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="models/table_1.cs" Line="1" Column="1" />
+      <File FileName="Views/Home/Delete.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,11 +14,12 @@
           <Node name="Eform1" expanded="True">
             <Node name="Eform1" expanded="True">
               <Node name="controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
               <Node name="models" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
+                  <Node name="Delete.cshtml" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -29,9 +32,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/umangbarthwal/Desktop/eForms/Eform1/controllers/HomeController.cs" relfile="controllers/HomeController.cs" line="71" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
