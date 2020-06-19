@@ -6662,7 +6662,7 @@
       "outputPath": "/Users/umangbarthwal/Desktop/eForms/Eform1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/umangbarthwal/.nuget/NuGet/NuGet.Config"
+        "/Users/umangbarthwal/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
