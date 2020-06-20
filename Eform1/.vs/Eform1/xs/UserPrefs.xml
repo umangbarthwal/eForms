@@ -1,8 +1,7 @@
 ﻿<Properties StartupConfiguration="{D73BDF18-3D4A-4090-BC11-251C4302D678}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/Delete.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="controllers/HomeController.cs">
     <Files>
       <File FileName="controllers/HomeController.cs" Line="122" Column="75" />
-      <File FileName="Views/Home/Delete.cshtml" Line="41" Column="1" />
       <File FileName="Views/Home/Index.cshtml" />
     </Files>
     <Pads>
@@ -13,9 +12,7 @@
               <Node name="controllers" expanded="True" />
               <Node name="models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="Delete.cshtml" selected="True" />
-                </Node>
+                <Node name="Home" expanded="True" />
               </Node>
             </Node>
           </Node>
