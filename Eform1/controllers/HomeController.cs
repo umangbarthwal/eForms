@@ -119,7 +119,7 @@ namespace Eform1.controllers
                 
             }
 
-            return RedirectToAction("Results", new { id = Table_1.UID_F });
+            return RedirectToAction(nameof(Index));
 
         }
 
@@ -190,6 +190,43 @@ namespace Eform1.controllers
             formModelView.list_3 = _formRepository.GetAll3(id);  
             return View(formModelView);
         }
+
+
+
+
+
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var form = await _db.table_1s
+                .Include(m => m.table_2)
+                .ThenInclude(n => n.table_3)
+                .FirstOrDefaultAsync(m => m.UID_F == id);
+            if (form == null)
+            {
+                return NotFound();
+            }
+
+            return View(form);
+        }
+
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var form = await _db.table_1s.FindAsync(id);
+            _db.table_1s.Remove(form);
+            await _db.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+
+
     }
 
 
@@ -208,6 +245,7 @@ namespace Eform1.controllers
 
            return Content($"hello {formData.Agree}");
          */
+
 
 
 }
