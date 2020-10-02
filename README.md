@@ -11,3 +11,14 @@
 ### Server-side Developer(s)<br />
 - Jayaram<br />
 - Umang Barthwal<br />
+
+### Technologies Used <br/>
+• ASP.NET Core<br/>
+• Entity Framework<br/>
+• HTML/CSS/JavaScript<br/>
+• Bootstrap 4<br/>
+• MySQL<br/>
+• MySQL Workbench<br/>
+• GitHub<br/>
+
+### Project completed and submitted to the PS organisation.

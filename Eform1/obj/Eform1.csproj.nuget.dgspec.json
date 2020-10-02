@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/umangbarthwal/Downloads/Eform1/Eform1.csproj": {}
+    "/Users/umangbarthwal/Desktop/eForms/Eform1/Eform1.csproj": {}
   },
   "projects": {
-    "/Users/umangbarthwal/Downloads/Eform1/Eform1.csproj": {
+    "/Users/umangbarthwal/Desktop/eForms/Eform1/Eform1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/umangbarthwal/Downloads/Eform1/Eform1.csproj",
+        "projectUniqueName": "/Users/umangbarthwal/Desktop/eForms/Eform1/Eform1.csproj",
         "projectName": "Eform1",
-        "projectPath": "/Users/umangbarthwal/Downloads/Eform1/Eform1.csproj",
+        "projectPath": "/Users/umangbarthwal/Desktop/eForms/Eform1/Eform1.csproj",
         "packagesPath": "/Users/umangbarthwal/.nuget/packages/",
-        "outputPath": "/Users/umangbarthwal/Downloads/Eform1/obj/",
+        "outputPath": "/Users/umangbarthwal/Desktop/eForms/Eform1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/umangbarthwal/.config/NuGet/NuGet.Config"
@@ -36,6 +36,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.20, )"

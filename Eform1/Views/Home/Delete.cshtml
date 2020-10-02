@@ -1,0 +1,74 @@
+﻿@model Eform1.models.table_1
+
+<h1>Delete Form</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Form</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UID_F)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.UID_F)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Form_Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Form_Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Creator)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Creator)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Created_On)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Created_On)
+        </dd>
+    </dl>
+
+    <table class="Form Table">
+
+        <tbody>
+            @foreach (var item in Model.table_2)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UID_F1)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UID_Q)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Question_Type)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Question)
+                    </td>
+                    @if (item.Question_Type == "radio" || item.Question_Type == "checkbox")
+                    {
+                        @foreach (var option in item.table_3)
+                        {
+
+                            <td><b> @Html.DisplayFor(modelItem => option.Options)</b></td>
+
+                        }
+                    }
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="UID_F" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
